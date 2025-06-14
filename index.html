@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="30">
+    <meta http-equiv="refresh" content="60">
     <title>API Stat</title>
     <style>
       body {
@@ -21,7 +21,6 @@
 
       iframe {
         width: 100%;
-        height: 300px;
         border: none;
       }
 
@@ -40,23 +39,33 @@
     <h1>VSDigital API Stat</h1>
     <div class="container">
       <div class="column">
-        <h2>Orders - Last 7 Days</h2>
+        <h2>Today</h2>
         <iframe 
-          src="https://crm.zohocloud.ca/crm/specific/ViewChartImage?width=400&height=400&embedDetails=1f8397299b5a623487d24a429749079d91260fbb500bfdd34471278c30f61c265585049a8f2079463ba3e805dc6dbadec6c24a216cbbdf234b0db6bbbdafc542ae423a1016ac76e0dadc83d8232b15b9cbba244665fe48c9b92c92d5e61c725125873768dbc47c107999ee57ba2297ce">
+          src="https://crm.zohocloud.ca/crm/specific/ViewChartImage?width=400&height=400&embedDetails=8042ac9292685f0409f820e56a51f3b36021de87d08cb23cb5bf220a6c5f34f536be6847c0e559bed6afcf927604d739231cc080922fe8086af0318c1ab803c168a6840d1b5d94bb7a714f9ac4fec099b06b5e4f1f0f1283deaa85d60d874e61e8c0fd1dd38a6c7e4192c3e46a77cd81"
+          style="height: 200px;">
         </iframe>
       </div>
       <div class="column">
-        <h2>Today</h2>
+        <h2>Orders - Last 7 Days</h2>
         <iframe 
-          src="https://crm.zohocloud.ca/crm/specific/ViewChartImage?width=400&height=400&embedDetails=8042ac9292685f0409f820e56a51f3b36021de87d08cb23cb5bf220a6c5f34f536be6847c0e559bed6afcf927604d739231cc080922fe8086af0318c1ab803c168a6840d1b5d94bb7a714f9ac4fec099b06b5e4f1f0f1283deaa85d60d874e61e8c0fd1dd38a6c7e4192c3e46a77cd81">
+          src="https://crm.zohocloud.ca/crm/specific/ViewChartImage?width=400&height=400&embedDetails=1f8397299b5a623487d24a429749079d91260fbb500bfdd34471278c30f61c265585049a8f2079463ba3e805dc6dbadec6c24a216cbbdf234b0db6bbbdafc542ae423a1016ac76e0dadc83d8232b15b9cbba244665fe48c9b92c92d5e61c725125873768dbc47c107999ee57ba2297ce"
+          style="height: 400px;">
         </iframe>
       </div>
     </div>
       <div class="container">
         <div class="column">
+        <h2>Items Ordered</h2>
+        <iframe 
+          src="https://crm.zohocloud.ca/crm/specific/ViewChartImage?width=1000&height=500&embedDetails=f0884850a1b32bfb826c2d7a781a8e61ffd0143542925ac6cc0e220c2c4420912412ccc82568d4a693eb50e1c6b92b7b7f939c89352ed55518f7e0a890da49bd1fb8e7543cfe435122a75b40b25c99b195aad5434fc635154d119d60ebf9e06acfc62eb107906370d07deab7846236d8"
+          style="height: 200px;">
+        </iframe>
+      </div>
+        <div class="column">
         <h2>Orders - All Time</h2>
         <iframe 
-          src="https://crm.zohocloud.ca/crm/specific/ViewChartImage?width=1000&height=500&embedDetails=03ae4cc68c4f5271fbf21d2a2c9331dc243154d79e1892cb3591c8db1a3aaf1423ffa879405a3d72283011fc5a4a30b10d414bea75fb43efac664479526e62acd739f2850eff14e700946e8ae407ec17faa6ea7a90ef3ce959d5c040aecc66e66a690ad800ef55130bb13b925ac12615">
+          src="https://crm.zohocloud.ca/crm/specific/ViewChartImage?width=1000&height=500&embedDetails=03ae4cc68c4f5271fbf21d2a2c9331dc243154d79e1892cb3591c8db1a3aaf1423ffa879405a3d72283011fc5a4a30b10d414bea75fb43efac664479526e62acd739f2850eff14e700946e8ae407ec17faa6ea7a90ef3ce959d5c040aecc66e66a690ad800ef55130bb13b925ac12615"
+          style="height: 200px;">
         </iframe>
       </div>
     </div>
