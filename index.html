@@ -26,8 +26,25 @@
     }
 
     .col {
-      flex: 1 1 100%;
-      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* First row: Orders Today (narrow) + Orders All Time (wide) */
+    .first-row .col-small {
+      flex: 1 1 35%;
+      max-width: 35%;
+    }
+
+    .first-row .col-large {
+      flex: 1 1 65%;
+      max-width: 65%;
+    }
+
+    /* Second row: equal width */
+    .second-row .col {
+      flex: 1 1 50%;
+      max-width: 50%;
     }
 
     .iframe-wrapper {
@@ -46,23 +63,6 @@
       border: none;
     }
 
-    /* Custom widths for first row */
-    .row.first-row .col-small {
-      flex: 1 1 35%;
-      max-width: 35%;
-    }
-
-    .row.first-row .col-large {
-      flex: 1 1 65%;
-      max-width: 65%;
-    }
-
-    /* Equal widths for second row */
-    .row.second-row .col {
-      flex: 1 1 50%;
-      max-width: 50%;
-    }
-
     @media (max-width: 768px) {
       .row .col {
         flex: 1 1 100%;
@@ -70,7 +70,7 @@
       }
 
       .iframe-wrapper {
-        padding-top: 60%; /* Slightly flatter aspect ratio on mobile */
+        padding-top: 60%; /* slightly shorter for mobile */
       }
     }
   </style>
@@ -78,7 +78,7 @@
 <body>
   <h1>VSDigital API Stat</h1>
 
-  <!-- First Row -->
+  <!-- Row 1 -->
   <div class="row first-row">
     <div class="col col-small">
       <h2>Orders Today</h2>
@@ -99,7 +99,7 @@
     </div>
   </div>
 
-  <!-- Second Row -->
+  <!-- Row 2 -->
   <div class="row second-row">
     <div class="col">
       <h2>Orders - Last 7 Days</h2>
