@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="60" />
+  <title>API Stat</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1, h2 {
+      margin: 10px 0;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 0px;
+      margin-bottom: 20px;
+      height: 450px;
+    }
+
+    .col {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .col-small {
+      flex: 0 0 40%;
+    }
+
+    .col-large {
+      flex: 0 0 60%;
+    }
+
+    .iframe-wrapper {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      position: relative;
+    }
+
+    .iframe-wrapper iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+
+    /* Responsive stacking on small screens */
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+      }
+
+      .col-small,
+      .col-large,
+      .col {
+        flex: 1 1 100%;
+      }
+
+      .iframe-wrapper {
+        aspect-ratio: 4 / 3; /* optional: change to 16/9 for flatter mobile charts */
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>VSDigital API Stat</h1>
+
+  <!-- Row 1 -->
+  <div class="row">
+    <div class="col col-small">
+      <h2>Order Submissions Today</h2>
+      <div class="iframe-wrapper">
+        <iframe 
+          src="https://crm.zohocloud.ca/crm/specific/ViewChartImage?width=400&height=400&embedDetails=8042ac9292685f0409f820e56a51f3b36021de87d08cb23cb5bf220a6c5f34f536be6847c0e559bed6afcf927604d739231cc080922fe8086af0318c1ab803c168a6840d1b5d94bb7a714f9ac4fec099b06b5e4f1f0f1283deaa85d60d874e61e8c0fd1dd38a6c7e4192c3e46a77cd81">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="col col-large">
+      <h2>Sales</h2>
+      <div class="iframe-wrapper">
+        <iframe 
+          src="https://crm.zohocloud.ca/crm/specific/ViewChartImage?width=1000&height=500&embedDetails=b958757fd79b1a97a93b121ff1e7afd155c50aaba70db68c476248d0487aa4e4b62d75b46d468010ce4d0fc7753029df5b17e302ee0205db797c4bd44182006e765efa8a4bcb9c640fa6cf3f4980e3be9ea40157ab932e19da76b8291f69c2cef0ed6728229ad7825441cf0b3b0f28d3">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="row">
+    <div class="col col-small">
+      <h2>Order Items - Last 7 Days</h2>
+      <div class="iframe-wrapper">
+        <iframe 
+          src="https://crm.zohocloud.ca/crm/specific/ViewChartImage?width=1000&height=500&embedDetails=cdecb4aaa7a64c56bb7b0e9453947af657c5991dd86d3cc9a864c80b047b57db1d87e380105e0dcdcef573674947bc5338c51c7162875cf76b14ef398590e6c416577bd37339c6ba8bfb10c5354448599483186e54ad5bdcf47899bf2ba71470ab838694aa5f11add1cc73c76a05b238">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="col col-large">
+      <h2>Items Ordered</h2>
+      <div class="iframe-wrapper">
+        <iframe 
+          src="https://crm.zohocloud.ca/crm/specific/ViewChartImage?width=1000&height=500&embedDetails=f0884850a1b32bfb826c2d7a781a8e61ffd0143542925ac6cc0e220c2c4420912412ccc82568d4a693eb50e1c6b92b7b7f939c89352ed55518f7e0a890da49bd1fb8e7543cfe435122a75b40b25c99b195aad5434fc635154d119d60ebf9e06acfc62eb107906370d07deab7846236d8">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
